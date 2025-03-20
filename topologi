@@ -7,6 +7,9 @@
                            |
                        [ client ]
 
-# Network
-- internet - router : dynamic
-- router - client : 192.168.10.0/24
+# Alokasi Jaringan
+- [internet] to [router : dynamic
+- [router] to [client : 192.168.10.0/24
+- [router] to [main server : 172.16.10.0/30
+- [main server] to [data server] : 172.16.10.4/30
+- [main server] to [app server] : 172.16.10.8/29
