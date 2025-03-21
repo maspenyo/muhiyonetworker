@@ -6,4 +6,27 @@ Contoh konfigurasi dibawah ini, sebuah server mempunyai 2 interface jaringan yai
 
    ```vim /etc/netplan/50-cloud-init.yaml```
    
-3. 
+2. Edit dan sesuaikan dengan kondisi jaringan yang ada
+
+   ```
+   network:
+       ethernets:
+           ens18:
+               addresses:
+               - 172.17.15.254/24
+               nameservers:
+                   addresses:
+                   - 172.17.15.1
+                   search: []
+               routes:
+               -   to: default
+                   via: 172.17.15.1
+           ens19:
+               addresses:
+               - 10.11.12.1/29
+       version: 2
+   ```
+3. Simpan dan keluar dari mode konfigurasi dengan perintah ```:qw```
+4. Terapkan konfigurasi jaringan dengan menggunakan perintah ```netplan apply```
+5. Periksan jaringan yang telah dibuat tadi, dengan perintah ```ip a```
+   
