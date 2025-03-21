@@ -5,9 +5,9 @@
 # Alokasi Jaringan
 - [internet] to [router] : dynamic
 - [router] to [client] : 192.168.10.0/24
-- [router] to [main server] : 172.16.10.0/30
-- [main server] to [data server] : 172.16.10.4/30
-- [main server] to [app server] : 172.16.10.8/29
+- [router] to [main server] : 172.17.15.0/24
+- [main server] to [data server] : 10.11.12.2/30
+- [main server] to [app server] : 10.11.12.7/29
 
 # Detail IP Address
 ## [ router ]
@@ -19,7 +19,7 @@
 - eth0 : dhcp_client_from_router
 
 ## [ main server ]
-- eth0 : 172.16.10.2/30
+- eth0 : 172.17.15.254/30
 - eth1 : 172.16.10.5/30
 - eth2 : 172.16.10.9/29
 
