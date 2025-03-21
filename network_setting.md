@@ -33,4 +33,5 @@ Contoh konfigurasi dibawah ini, sebuah server mempunyai 2 interface jaringan yai
   
    ```netplan apply```
 8. Periksa jaringan yang telah dibuat tadi, dengan perintah ```ip a```
-   (image/network_setting.jpeg)
+
+   ![Logo](image/network-setting.jpg)
