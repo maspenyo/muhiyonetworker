@@ -1,7 +1,7 @@
 # Network Setting
 Contoh konfigurasi dibawah ini, sebuah server mempunyai 2 interface jaringan yaitu ens18 dan ens19. Untuk mengkonfigurasinya, kita perlu mengedit file ```/etc/netplan/50-cloud-init.yaml```.
 
-## konfigurasi network
+## Konfigurasi Jaringan
 1. Buka dan edit file ```/etc/netplan/50-cloud-init.yaml``` dengan menggunakan editor vim.
 
    ```vim /etc/netplan/50-cloud-init.yaml```
@@ -33,4 +33,4 @@ Contoh konfigurasi dibawah ini, sebuah server mempunyai 2 interface jaringan yai
   
    ```netplan apply```
 8. Periksa jaringan yang telah dibuat tadi, dengan perintah ```ip a```
-   
+   (image/network_setting.jpeg)
