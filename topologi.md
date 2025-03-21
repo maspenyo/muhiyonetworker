@@ -1,11 +1,6 @@
 # Topologi Jaringan Server
 
-[ internet ] --------- [ router ] --------- [ main server ] --------- [ data server ]
-                           |                       |____________
-                           |                                   |_______ [ app server 1 ]
-                           |                                   |_______ [ app server 2 ]
-                           |
-                       [ client ]
+![Logo](image/topologi.png)
 
 # Alokasi Jaringan
 - [internet] to [router] : dynamic
