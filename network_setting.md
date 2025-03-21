@@ -26,7 +26,11 @@ Contoh konfigurasi dibawah ini, sebuah server mempunyai 2 interface jaringan yai
                - 10.11.12.1/29
        version: 2
    ```
-3. Simpan dan keluar dari mode konfigurasi dengan perintah ```:qw```
-4. Terapkan konfigurasi jaringan dengan menggunakan perintah ```netplan apply```
-5. Periksan jaringan yang telah dibuat tadi, dengan perintah ```ip a```
+3. Simpan dan keluar dari mode konfigurasi dengan perintah
+
+   ```:qw```
+5. Terapkan konfigurasi jaringan dengan menggunakan perintah
+  
+   ```netplan apply```
+8. Periksa jaringan yang telah dibuat tadi, dengan perintah ```ip a```
    
